@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="resource/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resource/css/queries.css">
+        <title>HelpingHands</title>
+    </head>
+    <body>
+        <header>
+            <nav >
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#gallary">Gallary</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#joinus">Join Us</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+            <div class="hero-text-box">
+                <h1>Please Donate.<br> Giving is the greatest act of grace.</h1><br>
+                <a class="btn btn-full js-scroll-to-plan" href="#donate"> Donate now </a>
+                <a class="btn btn-ghost js-scroll-to-start" href="#joinus">NGO's Enroll </a>
+            </div>
+
+        </header>
+
+        <section class="section-aboutus" id="aboutus">
+            <div class="row">
+                <h2>About Us</h2>
+                <p class="long-copy">
+                    Hello, we’re Helping Hands, your intermediate help for donation. We know you are busy and want to contribute towards society. We are here to help you, what we do is connect NGO's and common public who want to donate. Everbody who wants to donate can enroll and NGO's who want donation are most welcome. We find NGO's for donors and vice versa. Please contribute towards society. We’re really good at it, we promise!
+                </p>
+                <p class="donate">
+                    Time To Donate...
+                </p>
+                <blockquote class="donateqoute">
+                    " Small Action * Lots of People
+                    = BIG Change "
+                </blockquote>
+            </div>
+        </section>
+        <section class="section-img" id="gallary">
+            <div class="row">
+                <h2 class="mem">Memories :></h2>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                <img src="im1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                <img src="img1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                <img src="im3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                <img src="im5.jpg" style="width:100%">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <br>
+        </section>
+
+        <section class="section-form" id="donate">
+            <div class="row">
+                <h2>We’re happy on your contribution</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="add1.php" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="number">Contact Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" name="number" id="number" placeholder="Your Number" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="address">Area</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="address"  placeholder="Write Your address"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="city" id="city" placeholder="Your City" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="state">State</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="state" id="state" placeholder="Your State" required>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label >&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3 ">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
+        <section class="section-form2" id="joinus">
+            <div class="row">
+                <h2>Join With Us :)</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="add2.php" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name"> NGO Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your NGO Name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="number">Contact Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="number" name="number" id="number" placeholder="Your Number" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="address">Area</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="address"  placeholder="Write Your address"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="city" id="city" placeholder="Your City" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="state">State</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="state" id="state" placeholder="Your State" required>
+                        </div>
+                    </div>
+                    <br>
+        
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label >&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3 ">
+                            <input type="submit" value="Send it!">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <h3 class="mail">
+                        Send Your queries at <a href="#">helpinghands@gmail.com</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2019 by HelpingHands. All rights are reserved.
+                </p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="resource/js/imgs.js"></script>
+        <script src="resource/js/script.js"></script>
+    </body>
+</html>
